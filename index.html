@@ -12,3 +12,11 @@
   text-decoration: none;
 }
 </style>
+
+<script>
+link.addEventListener('click', function (event) {
+  if (this.parentElement.classList.contains('isDisabled')) {
+    event.preventDefault();
+  }
+});
+</script>
